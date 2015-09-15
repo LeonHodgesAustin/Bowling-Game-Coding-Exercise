@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bowling_Game_Coding_Exercise
 {
+    //in retrosepct i might have been way simpler to do each game as a linked likst of frames and have each frame calcualte it's own score
     class Game
     {
         public string gameString;
@@ -19,9 +20,7 @@ namespace Bowling_Game_Coding_Exercise
             frames = new Frame[frameStrings.Length];
 
             for (int i = 0; i < frames.Length; i++)
-            {
                 frames[i] = new Frame(frameStrings[i].ToCharArray(), i == (frames.Length-1));
-            }
 
             gameScore = scoreFrames(frames);
         }
@@ -42,34 +41,31 @@ namespace Bowling_Game_Coding_Exercise
                             break;
                         case 1: currentScore = 10;
                             if (!currentFrame.lastFrame)
-                            {
-                                Frame nextFrame = frames[i + 1];
-                                currentScore += nextFrame.ballThrows[0].score;
-                            }
+                                currentScore += frames[i + 1].ballThrows[0].score;
                             break;
                         case 2: currentScore = 10;
                             if (!currentFrame.lastFrame)
-                            {
-                                Frame nextFrame = frames[i + 1];
-                                currentScore += nextFrame.ballThrows[0].score;
-                                if (!nextFrame.lastFrame)
+                                switch (frames[i + 1].ballThrows[0].throwType)
                                 {
-                                    nextFrame = frames[i + 2];
-                                    currentScore += nextFrame.ballThrows[0].score;
-                                }
-                                else
-                                {
-                                    currentScore += nextFrame.ballThrows[1].score;
-                                }
+                                    case 0: if(frames[i + 1].ballThrows[1].throwType != 1)
+                                                currentScore += frames[i + 1].ballThrows[0].score + frames[i + 1].ballThrows[1].score;
+                                            else
+                                                currentScore += frames[i + 1].ballThrows[1].score;
+                                        break;
 
-                            }
+                                    case 2: currentScore += frames[i + 1].ballThrows[0].score;
+
+                                            if (!frames[i + 1].lastFrame)
+                                                currentScore += frames[i + 2].ballThrows[0].score;
+                                            else
+                                                currentScore += frames[i + 1].ballThrows[1].score;
+                                        break;
+                                }
                             break;
                     }
                 }
-
                 score += currentScore;
             }
-
             return score;
         }
     }

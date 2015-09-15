@@ -14,7 +14,6 @@ namespace Bowling_Game_Coding_Exercise
         {
             ballThrows = new BallThrow[frameChars.Length];
             for (int i = 0; i < frameChars.Length; i++)
-            {
                 switch (frameChars[i])
                 {
                     case 'X': ballThrows[i] = new BallThrow(10, 2);
@@ -24,7 +23,7 @@ namespace Bowling_Game_Coding_Exercise
                     default: ballThrows[i] = new BallThrow(int.Parse(frameChars[i].ToString()), 0);
                         break;
                 }
-            }
+
             this.lastFrame = lastFrame;
         }
     }

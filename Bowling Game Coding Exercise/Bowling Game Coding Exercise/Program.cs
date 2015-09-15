@@ -27,10 +27,9 @@ namespace Bowling_Game_Coding_Exercise
             print("Should be: 150");
 
             print("Input String: 5/-54-54-X-5/-09-X-5/-5/-5/-5");
-            Game game4 = new Game("5/-54-54-X-5/-09-X-5/-5/-5/-5");
+            Game game4 = new Game("5/-54-54-X-5/-09-X-09-5/-5/-5");
             print("Output: " + game4.gameScore);
-            int num = (10 + 5) + (9) + (9) + (10 + 10) + (10 + 0) + (9) + (10 + 10) + (10 + 5) + (10 + 5) + (10 + 5);
-            print("Should be: " + num);
+            print("Should be: 130");
 
             Console.ReadLine();
         }

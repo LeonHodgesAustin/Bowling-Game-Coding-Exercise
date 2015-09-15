@@ -1,6 +1,5 @@
 C:\Users\Leon\temp\Bowling Game Coding Exercise\Bowling Game Coding Exercise\bin\Debug\Bowling Game Coding Exercise.exe.config
 C:\Users\Leon\temp\Bowling Game Coding Exercise\Bowling Game Coding Exercise\bin\Debug\Bowling Game Coding Exercise.exe
 C:\Users\Leon\temp\Bowling Game Coding Exercise\Bowling Game Coding Exercise\bin\Debug\Bowling Game Coding Exercise.pdb
-C:\Users\Leon\temp\Bowling Game Coding Exercise\Bowling Game Coding Exercise\obj\Debug\Bowling Game Coding Exercise.csprojResolveAssemblyReference.cache
 C:\Users\Leon\temp\Bowling Game Coding Exercise\Bowling Game Coding Exercise\obj\Debug\Bowling Game Coding Exercise.exe
 C:\Users\Leon\temp\Bowling Game Coding Exercise\Bowling Game Coding Exercise\obj\Debug\Bowling Game Coding Exercise.pdb
