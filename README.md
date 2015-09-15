@@ -48,38 +48,6 @@ o These throws count as part of the 10th frame.
 
 o The process does not repeat – for example, knocking down all 10 pins on a bonus throw does not
 
-Examples
-
-Input String Calculated As Score
-
-X-X-X-X-X-X-X-X-X-X-XX (10+10+10) + (10+10+10) + (10+10+10) +
-
-The frame is over early. The score for the frame is 10 plus the total pins knocked down on the next
-
-two throws.
-
-The score for the frame is 10 plus the number of pins knocked down on the next throw.
-
-the total number of pins knocked down.
-
-last frame.
-
-last frame.
-
-provide any additional bonus throws.
-
-45-54-36-27-09-63-81-18-90-72 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 + 9 90
-
-5/-5/-5/-5/-5/-5/-5/-5/-5/-5/-5 (10+5) + (10+5) + (10+5) + (10+5) + (10+5) +
-
-(10+10+10) + (10+10+10) + (10+10+10) +
-
-(10+10+10) + (10+10+10) + (10+10+10) +
-
-(10+10+10)
-
-(10+5) + (10+5) + (10+5) + (10+5) + (10+5)
-
 Allowed Languages
 
 Java, Groovy, Ruby/JRuby, Clojure, Scala, C#, Common LISP, JavaScript
